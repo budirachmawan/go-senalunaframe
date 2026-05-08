@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>SenaLuna Frame — Video Editing Studio</title>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9CSN8ZMH7K"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2EMD30X04E"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-9CSN8ZMH7K');
+  gtag('config', 'G-2EMD30X04E');
 </script>
 <meta name="description" content="Professional short-form video editing for creators, brands, and businesses. Fast, clean, and ready to post.">
 <link rel="canonical" href="https://senalunaframe.com/">
@@ -456,6 +456,8 @@ footer {
 
 
 
+.pricing-layout { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; align-items:start; }
+@media(max-width:760px){ .pricing-layout { grid-template-columns:1fr; } }
 /* INCLUDE BOX */
 .include-box { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }
 @media(max-width:640px){.include-box{grid-template-columns:1fr}}
@@ -539,7 +541,6 @@ footer {
 
 /* ===================== MOBILE FIXES ===================== */
 @media(max-width:640px) {
-  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
 }
 @media(max-width:768px) {
   /* General */
@@ -591,25 +592,20 @@ footer {
   
   
   .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
-  .trust-stat 
   .section-title { font-size: 1.5rem; }
   
   
   
   
   .price-card { padding: 1.25rem; }
-  .cta-section { padding: 3rem 1.25rem; }
 }
-  width: 52px; height: 52px; border-radius: 50%; flex-shrink: 0;
-  background: var(--primary-container); color: white;
-  font-family: 'Manrope', sans-serif; font-size: 1.3rem; font-weight: 900;
-  display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 8px 24px color-mix(in srgb, var(--primary-container) 40%, transparent);
-}
+
 @media(max-width:640px) {
-  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
-}
-@media(max-width:768px) {
+  .portfolio-toolbar > div { flex-direction: column; align-items: stretch; }
+  .portfolio-type-switch { justify-content: center; }
+  .portfolio-chip-row { flex-wrap: wrap; }
+  .price-table th, .price-table td { padding: 0.5rem 0.6rem; font-size: 0.8rem; }
+  #calcInput { font-size: 0.95rem; }
 }
 </style>
 </head>
@@ -665,7 +661,7 @@ footer {
       </div>
       <p style="color:var(--on-surface-variant);font-size:0.95rem;margin-bottom:1.5rem">Send us your footage, we edit it into ready-to-post videos. The more you order, the less you pay per video.</p>
 
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:start">
+      <div class="pricing-layout">
 
         <!-- Tabel harga -->
         <div style="background:var(--surface-container);border-radius:1.25rem;overflow:hidden;border:1px solid color-mix(in srgb, var(--outline-variant) 15%, transparent)">
