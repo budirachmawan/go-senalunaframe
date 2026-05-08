@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SenaLuna Frame — Video Editing Studio</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2EMD30X04E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2EMD30X04E');
+</script>
+<meta name="description" content="Professional short-form video editing for creators, brands, and businesses. Fast, clean, and ready to post.">
+<link rel="canonical" href="https://senalunaframe.com/">
+<link rel="icon" href="https://senalunaframe.com/favicon.ico">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SenaLuna Frame">
+<meta property="og:title" content="SenaLuna Frame — Video Editing Studio">
+<meta property="og:description" content="We help creators and brands produce clean, scroll-stopping videos — fast.">
+<meta property="og:url" content="https://senalunaframe.com/">
+<meta property="og:image" content="https://senalunaframe.com/og-image-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
+<meta name="facebook-domain-verification" content="2xm8hdbf1zjp5lh9y37ghppeko42ug" />
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1286619442799528');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1286619442799528&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800;900&family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --primary: #b5c4ff;
+  --primary-container: #004dd5;
+  --on-primary: #00297a;
+  --on-primary-fixed: #00174d;
+  --secondary: #abc7ff;
+  --surface: #101418;
+  --surface-dim: #101418;
+  --surface-container-lowest: #0b0f12;
+  --surface-container-low: #181c20;
+  --surface-container: #1c2024;
+  --surface-container-high: #262a2e;
+  --surface-container-highest: #313539;
+  --surface-bright: #363a3e;
+  --on-surface: #e0e3e8;
+  --on-surface-variant: #c3c5d7;
+  --outline: #8d90a0;
+  --outline-variant: #434654;
+  --gradient-primary: linear-gradient(135deg, #004dd5, #b5c4ff);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+html { color-scheme: dark; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--surface);
+  color: var(--on-surface);
+  transition: background 0.3s, color 0.3s;
+  overflow-x: hidden;
+  opacity: 0;
+  animation: pageEntrance 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+@keyframes pageEntrance {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+h1,h2,h3,h4,h5 { font-family: 'Manrope', sans-serif; }
+.label { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--outline-variant); border-radius: 4px; }
+
+/* NAV */
+nav {
+  position: fixed; top: 0; width: 100%; z-index: 100;
+  background: color-mix(in srgb, var(--surface) 80%, transparent);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid color-mix(in srgb, var(--outline-variant) 20%, transparent);
+  transition: background 0.3s;
+}
+.nav-inner {
+  max-width: 1280px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.75rem 2rem;
+}
+.nav-col-left, .nav-col-right { flex: 1; display: flex; align-items: center; }
+.nav-col-left { justify-content: flex-start; }
+.nav-col-right { justify-content: flex-end; gap: 1.5rem; }
+.nav-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; flex-shrink: 0; }
+.nav-logo-text { font-family: 'Manrope', sans-serif; font-weight: 900; font-size: 1.1rem; color: var(--on-surface); letter-spacing: -0.03em; }
+.nav-logo-sub { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.6rem; font-weight: 600; color: var(--primary); text-transform: uppercase; letter-spacing: 0.15em; }
+.nav-links { display: flex; align-items: center; gap: 2rem; }
+.nav-links a { color: var(--on-surface-variant); font-size: 0.875rem; font-weight: 500; text-decoration: none; transition: color 0.2s; }
+.nav-links a:hover { color: var(--primary); }
+.nav-controls { display: flex; align-items: center; gap: 1rem; }
+
+
+
+
+
+.light 
+
+
+
+ 50%{opacity:0.3} }
+
+
+
+  max-width: 620px;
+  margin: -1rem auto 2rem;
+  font-size: 0.95rem;
+  color: var(--on-surface);
+  line-height: 1.7;
+  font-weight: 600;
+}
+.hero-tag {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--on-surface-variant);
+  border: 1px solid color-mix(in srgb, var(--outline-variant) 50%, transparent);
+  padding: 0.3rem 0.8rem; border-radius: 999px;
+}
+
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  padding: 1rem 2rem; border-radius: 999px;
+  background: var(--gradient-primary);
+  color: white; font-weight: 700; font-size: 1rem;
+  text-decoration: none; border: none; cursor: pointer;
+  box-shadow: 0 8px 32px color-mix(in srgb, var(--primary-container) 40%, transparent);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-primary:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 16px 48px color-mix(in srgb, var(--primary-container) 50%, transparent); }
+.btn-secondary {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  padding: 1rem 2rem; border-radius: 999px;
+  background: transparent; color: var(--on-surface); font-weight: 600; font-size: 1rem;
+  text-decoration: none; border: 1px solid color-mix(in srgb, var(--outline-variant) 50%, transparent);
+  cursor: pointer; transition: background 0.2s, border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.btn-secondary:hover { background: var(--surface-container-low); border-color: var(--primary); color: var(--primary); transform: translateY(-2px); box-shadow: 0 14px 30px color-mix(in srgb, var(--primary-container) 12%, transparent); }
+
+
+ 50%{transform:translateX(-50%) translateY(8px)} }
+
+
+
+
+
+
+
+
+/* SECTION COMMON */
+.section { padding: 3rem 2rem; }
+.section-inner { max-width: 1280px; margin: 0 auto; }
+.section-label {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--primary);
+  margin-bottom: 1rem; display: block;
+}
+.section-title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800; letter-spacing: -0.02em;
+  color: var(--on-surface); line-height: 1.1;
+}
+.section-desc { color: var(--on-surface-variant); font-size: 1.1rem; line-height: 1.7; margin-top: 1rem; }
+
+
+/* PRICING SECTION */
+.pricing-section { background: var(--surface-container-lowest); }
+.pricing-group { margin-bottom: 0; }
+.pricing-group-header {
+  display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.75rem;
+}
+.pricing-note { margin: 1.25rem 0 1.5rem; }
+.pricing-group-line { flex: 1; height: 1px; background: color-mix(in srgb, var(--outline-variant) 30%, transparent); }
+.pricing-group-title { font-size: 1.5rem; font-weight: 800; white-space: nowrap; color: var(--on-surface); }
+.pricing-grid { display: grid; gap: 1.5rem; }
+.pricing-grid-4 { grid-template-columns: repeat(4,1fr); }
+.pricing-grid-3 { grid-template-columns: repeat(3,1fr); }
+.pricing-grid-2 { grid-template-columns: repeat(2,1fr); }
+@media(max-width:1024px){.pricing-grid-4{grid-template-columns:repeat(2,1fr)}.pricing-grid-3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.pricing-grid-4,.pricing-grid-3,.pricing-grid-2{grid-template-columns:1fr}}
+
+.price-card {
+  background: var(--surface-container-low); padding: 2rem; border-radius: 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--outline-variant) 20%, transparent);
+  display: flex; flex-direction: column; position: relative; overflow: hidden;
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.price-card:hover { border-color: color-mix(in srgb, var(--primary) 40%, transparent); transform: translateY(-4px); box-shadow: 0 24px 64px color-mix(in srgb, var(--primary-container) 15%, transparent); }
+.price-card.featured {
+  background: var(--surface-container-low);
+  border: 2px solid var(--primary);
+  box-shadow: 0 16px 48px color-mix(in srgb, var(--primary-container) 30%, transparent);
+  transform: scale(1.03);
+  z-index: 2;
+}
+.price-card.featured:hover { transform: scale(1.03) translateY(-4px); }
+.price-badge {
+  position: absolute; top: 0; right: 1rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.6rem; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase;
+  background: var(--primary); color: var(--on-primary-fixed);
+  padding: 0.3rem 0.75rem; border-radius: 0 0 8px 8px;
+}
+.price-range { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--outline); margin-bottom: 0.5rem; }
+.price-name { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--on-surface); }
+.price-card.featured .price-name { color: var(--on-surface); }
+.price-amount { font-size: 2rem; font-weight: 900; color: var(--primary); margin-bottom: 0.25rem; line-height: 1; }
+.price-card.featured .price-amount { color: var(--primary); }
+.price-unit { font-size: 0.75rem; color: var(--on-surface-variant); margin-bottom: 1rem; }
+.price-card.featured .price-unit { color: var(--on-surface-variant); }
+.price-desc { font-size: 0.85rem; color: var(--on-surface-variant); line-height: 1.5; flex: 1; }
+.price-card.featured .price-desc { color: var(--on-surface-variant); }
+.price-card.featured .price-range[style],
+.price-card.featured .price-unit[style] { color: var(--on-surface-variant) !important; }
+
+/* TABLE */
+.price-table { width: 100%; margin-top: 2rem; border-radius: 1rem; overflow: hidden; background: var(--surface-container); }
+.price-table thead { background: var(--surface-container-high); }
+.price-table th, .price-table td { padding: 0.875rem 1.25rem; text-align: left; font-size: 0.85rem; }
+.price-table th { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--on-surface-variant); }
+.price-table tbody tr { border-top: 1px solid color-mix(in srgb, var(--outline-variant) 15%, transparent); transition: background 0.2s; }
+.price-table tbody tr:hover { background: var(--surface-container-high); }
+.price-table .price-highlight { font-weight: 800; color: var(--primary); }
+.price-table .name-cell { font-weight: 600; color: var(--on-surface); }
+
+.btn-filled-primary {
+  padding: 0.875rem 1.5rem; border-radius: 999px; text-align: center;
+  background: var(--gradient-primary); color: white; font-weight: 700; cursor: pointer;
+  border: none; font-size: 0.9rem; transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s; text-decoration: none; display: block;
+}
+.btn-filled-primary:hover { opacity: 0.92; transform: translateY(-2px); box-shadow: 0 14px 32px color-mix(in srgb, var(--primary-container) 24%, transparent); }
+
+
+
+/* PORTFOLIO */
+.portfolio-section {
+  position: relative;
+  padding: 1rem 1rem;
+  background: var(--surface);
+  border-top: 1px solid color-mix(in srgb, var(--outline-variant) 18%, transparent);
+}
+.portfolio-section .container { width: min(100%, 1280px); margin: 0 auto; }
+.portfolio-section .section-header { max-width: 820px; margin-bottom: 1.75rem; }
+.portfolio-section .section-title { font-size: clamp(2rem, 4vw, 3.25rem); }
+.portfolio-section .section-desc { max-width: 780px; font-size: 1rem; line-height: 1.7; }
+.portfolio-toolbar {
+  margin: 0 0 1.2rem;
+  padding: 0.95rem;
+  border: 1px solid color-mix(in srgb, var(--outline-variant) 28%, transparent);
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--surface-container-low) 82%, transparent);
+}
+.portfolio-type-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.055);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+.portfolio-mode,
+.portfolio-chip,
+.portfolio-page-btn {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.portfolio-mode {
+  min-width: 100px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--on-surface-variant);
+  cursor: pointer;
+  font-size: 0.84rem;
+  font-weight: 800;
+  padding: 0.58rem 0.9rem;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+.portfolio-mode:hover,
+.portfolio-mode.active { background: var(--primary); color: #08111f; transform: translateY(-1px); }
+.portfolio-chip-row { display: flex; flex-wrap: wrap; gap: 0.48rem; }
+.portfolio-chip {
+  border: 1px solid rgba(255,255,255,0.13);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.04);
+  color: var(--on-surface-variant);
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.48rem 0.78rem;
+  white-space: nowrap;
+}
+.portfolio-chip:hover,
+.portfolio-chip.active { background: var(--primary); border-color: var(--primary); color: #08111f; }
+.portfolio-full-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.8rem;
+  align-items: stretch;
+}
+.portfolio-full-grid.is-long { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.portfolio-full-grid .port-thumb-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #05070a;
+  border: 1px solid rgba(255,255,255,0.10);
+  text-decoration: none;
+  line-height: 0;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+.portfolio-full-grid .port-thumb-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(181,196,255,0.58);
+  box-shadow: 0 20px 44px rgba(0,0,0,0.34);
+}
+.portfolio-full-grid .port-thumb-img-wrap {
+  position: relative;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #101827, #1d2840);
+}
+.portfolio-full-grid.is-long .port-thumb-img-wrap { aspect-ratio: 16 / 9; }
+.portfolio-full-grid .port-thumb-img-wrap img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform 0.45s ease, filter 0.45s ease;
+}
+.portfolio-full-grid .port-thumb-card:hover img { transform: scale(1.055); filter: saturate(1.08) contrast(1.03); }
+
+.portfolio-pagination {
+  position: static; width: auto; z-index: auto; background: transparent; border: 0;
+  display: flex; align-items: center; justify-content: center; gap: 0.45rem; flex-wrap: wrap;
+  margin-top: 1.35rem;
+}
+.portfolio-page-btn {
+  min-width: 38px; min-height: 38px;
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.045);
+  color: var(--on-surface);
+  font-size: 0.88rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+.portfolio-page-btn:hover:not(:disabled),
+.portfolio-page-btn.active { background: var(--primary); border-color: var(--primary); color: #08111f; }
+.portfolio-page-btn:disabled { cursor: not-allowed; opacity: 0.42; }
+.portfolio-page-jump { color: var(--on-surface-variant); font-size: 0.86rem; padding: 0 0.1rem; }
+@media (max-width: 1080px) {
+  .portfolio-full-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .portfolio-full-grid.is-long { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .portfolio-section { padding: 1.5rem 1rem; }
+  .portfolio-proof { grid-template-columns: 1fr; }
+    .portfolio-type-switch { width: 100%; }
+  .portfolio-mode { flex: 1; min-width: 0; }
+  .portfolio-full-grid,
+  .portfolio-full-grid.is-long { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+
+/* CONTACT */
+.contact-socials { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 2rem; }
+.social-btn {
+  display: flex; align-items: center; gap: 0.5rem;
+  padding: 0.5rem 1rem; border-radius: 999px;
+  background: var(--surface-container); font-size: 0.8rem; font-weight: 600;
+  color: var(--on-surface-variant); text-decoration: none;
+  border: 1px solid color-mix(in srgb, var(--outline-variant) 30%, transparent);
+  transition: all 0.2s;
+}
+.social-btn:hover { color: var(--primary); border-color: var(--primary); background: color-mix(in srgb, var(--primary) 10%, transparent); }
+.social-btn svg { width: 16px; height: 16px; fill: currentColor; }
+
+/* FOOTER */
+footer {
+  background: var(--surface-container-lowest);
+  border-top: 1px solid color-mix(in srgb, var(--outline-variant) 15%, transparent);
+  padding: 4rem 2rem 2rem;
+}
+.footer-inner { max-width: 1280px; margin: 0 auto; }
+.footer-bottom { border-top: 1px solid color-mix(in srgb, var(--outline-variant) 15%, transparent); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; gap: 1rem; }
+.footer-copy { font-size: 0.75rem; color: var(--on-surface-variant); }
+
+/* FLOATING WA */
+.wa-float {
+  position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 200;
+  display: flex; align-items: center; gap: 0.75rem;
+  background: #25D366; color: white;
+  padding: 0.75rem 1.25rem 0.75rem 0.75rem; border-radius: 999px;
+  box-shadow: 0 8px 32px rgba(37,211,102,0.4);
+  text-decoration: none; font-weight: 700; font-size: 0.85rem;
+  animation: wa-bounce 3s ease-in-out infinite;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.wa-float:hover { transform: scale(1.05); box-shadow: 0 16px 48px rgba(37,211,102,0.5); animation: none; }
+.wa-float svg { width: 28px; height: 28px; fill: white; flex-shrink: 0; }
+@keyframes wa-bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+@media(max-width:480px){ .wa-float span { display: none; } .wa-float { padding: 0.75rem; } }
+
+/* SCROLL REVEAL */
+.reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* SECTION BG ALT */
+.bg-alt { background: var(--surface-container-lowest); }
+.bg-card { background: var(--surface-container-low); }
+
+/* MOBILE NAV */
+.hamburger { display: none; flex-direction: column; gap: 4px; background: none; border: none; cursor: pointer; padding: 6px; }
+.hamburger span { display: block; width: 22px; height: 2px; background: var(--on-surface); border-radius: 2px; transition: all 0.3s; }
+@media(max-width:768px){ .nav-links{display:none} .hamburger{display:flex} }
+.mobile-menu {
+  display: none; position: fixed; top: 64px; left: 0; right: 0; z-index: 99;
+  background: color-mix(in srgb, var(--surface) 95%, transparent);
+  backdrop-filter: blur(24px); padding: 1.5rem 2rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--outline-variant) 20%, transparent);
+  flex-direction: column; gap: 1rem;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a { color: var(--on-surface-variant); font-size: 1rem; font-weight: 600; text-decoration: none; padding: 0.5rem 0; border-bottom: 1px solid color-mix(in srgb, var(--outline-variant) 10%, transparent); }
+.mobile-menu a:hover { color: var(--primary); }
+
+
+
+
+/* INCLUDE BOX */
+.include-box { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }
+@media(max-width:640px){.include-box{grid-template-columns:1fr}}
+.include-col { background: var(--surface-container-low); border-radius: 1rem; padding: 1.25rem; border: 1px solid color-mix(in srgb, var(--outline-variant) 15%, transparent); }
+.include-col h5 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--primary); margin-bottom: 0.75rem; }
+.include-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+.include-col li { font-size: 0.85rem; color: var(--on-surface-variant); display: flex; gap: 0.5rem; }
+.include-col li::before { content: '+'; color: var(--primary); font-weight: 700; }
+
+/* NAV WORDMARK */
+.nav-logo-wordmark { font-family: 'Manrope', sans-serif; font-weight: 900; font-size: 1.25rem; letter-spacing: -0.04em; line-height: 1; }
+.nav-logo-sena { color: var(--on-surface); }
+.nav-logo-luna { color: var(--primary); }
+.nav-logo-dot { color: #f59e0b; font-size: 1.5rem; }
+
+/* FAQ */
+  background: var(--surface-container-low); border-radius: 1rem;
+  border: 1px solid color-mix(in srgb, var(--outline-variant) 20%, transparent);
+  overflow: hidden; transition: border-color 0.2s;
+}
+  width: 100%; padding: 1.25rem 1.5rem; display: flex; align-items: center; justify-content: space-between;
+  background: none; border: none; cursor: pointer; text-align: left;
+  font-family: 'Manrope', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--on-surface);
+  gap: 1rem;
+}
+
+/* ANIMATIONS */
+/* Hero parallax */
+
+/* Counter number */
+.count-num { display: inline-block; }
+/* Shimmer on pricing card hover */
+.price-card { position: relative; overflow: hidden; }
+.price-card::after {
+  content: ''; position: absolute; top: 0; left: -100%; width: 60%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.04), transparent);
+  transition: left 0.5s ease; pointer-events: none;
+}
+.price-card:hover::after { left: 150%; }
+/* Pulse ring on WA float */
+.wa-float::before {
+  content: ''; position: absolute; inset: -6px; border-radius: 999px;
+  border: 2px solid rgba(37,211,102,0.4);
+  animation: ring-pulse 2s ease-out infinite;
+}
+@keyframes ring-pulse { 0%{opacity:1;transform:scale(1)} 100%{opacity:0;transform:scale(1.4)} }
+/* Entrance animations */
+@keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+@keyframes fadeIn { from{opacity:0} to{opacity:1} }
+@keyframes slideRight { from{opacity:0;transform:translateX(-20px)} to{opacity:1;transform:translateX(0)} }
+/* Testi card hover lift already handled, add subtle border glow */
+/* Feature card icon color on hover */
+.feature-icon svg { transition: transform 0.2s; }
+/* Smooth nav scroll indicator */
+.nav-scroll-progress {
+  position: fixed; top: 0; left: 0; height: 2px; z-index: 200;
+  background: var(--gradient-primary); width: 0%; transition: width 0.1s linear;
+}
+/* Portfolio tab underline animation */
+.port-tab { position: relative; }
+.port-tab.active::after {
+  content: ''; position: absolute; bottom: -2px; left: 50%; right: 50%;
+  height: 2px; background: white; border-radius: 2px; transition: left 0.3s, right 0.3s;
+}
+/* typing cursor */
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+.typing-cursor { display: inline-block; width: 3px; height: 0.8em; background: var(--primary); margin-left: 2px; vertical-align: middle; animation: blink 0.8s infinite; border-radius: 2px; }
+
+
+
+
+
+
+ 100%{transform:translateX(-50%)} }
+
+
+.client-logo-item:hover 
+
+
+
+
+/* ===================== MOBILE FIXES ===================== */
+@media(max-width:640px) {
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+}
+@media(max-width:768px) {
+  /* General */
+  .section { padding: 2rem 1rem; }
+  .section-title { font-size: clamp(1.75rem, 6vw, 2.5rem); letter-spacing: -0.02em; }
+  .section-desc { font-size: 0.95rem; line-height: 1.6; }
+
+  /* Nav */
+  .nav-inner { padding: 0.6rem 1rem; position: relative; }
+  .nav-col-left, .nav-col-right { flex: 1; }
+  .nav-links { display: none; }
+  .nav-controls { gap: 0.5rem; }
+  .nav-logo-wordmark { font-size: 1.15rem; }
+  /* Trust bar */
+  .trust-bar { padding: 1.5rem 1.25rem; }
+  
+  
+  
+  
+  
+  
+
+
+  /* Pricing */
+  .pricing-group-header { flex-wrap: wrap; gap: 0.75rem; }
+  .pricing-group-title { font-size: 1.1rem; }
+  .price-amount { font-size: 1.5rem; }
+  .price-table th, .price-table td { padding: 0.6rem 0.75rem; font-size: 0.75rem; }
+
+
+
+
+  /* CTA sections */
+  .cta-title { font-size: 1.5rem; }
+  .cta-sub { font-size: 0.9rem; }
+  .cta-buttons { flex-direction: column; align-items: center; }
+  .btn-white, .btn-white-outline { width: 100%; max-width: 320px; justify-content: center; }
+
+
+  /* Contact */
+  
+  /* Footer */
+  .footer-inner { padding: 2.5rem 1.25rem 1.5rem; }
+
+  /* Portfolio */
+}
+
+@media(max-width:480px) {
+  
+  
+  .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+  .trust-stat 
+  .section-title { font-size: 1.5rem; }
+  
+  
+  
+  
+  .price-card { padding: 1.25rem; }
+  .cta-section { padding: 3rem 1.25rem; }
+}
+  width: 52px; height: 52px; border-radius: 50%; flex-shrink: 0;
+  background: var(--primary-container); color: white;
+  font-family: 'Manrope', sans-serif; font-size: 1.3rem; font-weight: 900;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--primary-container) 40%, transparent);
+}
+@media(max-width:640px) {
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+}
+@media(max-width:768px) {
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-col-left">
+      <a class="nav-logo" href="#">
+        <div class="nav-logo-wordmark">
+          <span class="nav-logo-sena">Sena</span><span class="nav-logo-luna">Luna</span><span class="nav-logo-dot">.</span>
+        </div>
+      </a>
+    </div>
+
+
+
+    <div class="nav-col-right">
+      <div class="nav-links">
+        <a href="#pricing">Pricing</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-controls">
+        <button class="hamburger" onclick="toggleMobile()" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  
+  <a href="#portfolio" onclick="toggleMobile()">Portfolio</a>
+  <a href="#contact" onclick="toggleMobile()">Contact</a>
+  <a href="../Website AI/indexAI.html" style="color:#6ee7b7;font-weight:700;display:flex;align-items:center;gap:0.5rem">✦ AI Production →</a>
+</div>
+
+<!-- PRICING SECTION -->
+<section class="section bg-alt" id="pricing" style="padding-top:5rem;padding-bottom:1rem">
+  <div class="section-inner">
+    <div class="text-center reveal" style="max-width:760px;margin:0 auto 3rem;text-align:center">
+      <span class="section-label">Video Editing Pricing</span>
+      <h2 class="section-title">Pick your volume, know your price instantly.</h2>
+    </div>
+
+    <div class="pricing-group">
+      <div class="pricing-group-header">
+        <div class="pricing-group-line"></div>
+        <h3 class="pricing-group-title">Short-Form Video Editing · from your footage</h3>
+        <div class="pricing-group-line"></div>
+      </div>
+      <p style="color:var(--on-surface-variant);font-size:0.95rem;margin-bottom:1.5rem">Send us your footage, we edit it into ready-to-post videos. The more you order, the less you pay per video.</p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:start">
+
+        <!-- Tabel harga -->
+        <div style="background:var(--surface-container);border-radius:1.25rem;overflow:hidden;border:1px solid color-mix(in srgb, var(--outline-variant) 15%, transparent)">
+          <table class="price-table" style="margin:0">
+            <thead><tr><th>Videos</th><th style="text-align:right">Per Video</th></tr></thead>
+            <tbody>
+              <tr><td class="name-cell">1 video</td><td style="text-align:right" class="price-highlight">$8</td></tr>
+              <tr><td class="name-cell">2 – 5 videos</td><td style="text-align:right" class="price-highlight">$7.80</td></tr>
+              <tr><td class="name-cell">6 – 10 videos</td><td style="text-align:right" class="price-highlight">$6.90</td></tr>
+              <tr><td class="name-cell">11 – 20 videos</td><td style="text-align:right" class="price-highlight">$6.45</td></tr>
+              <tr><td class="name-cell">21 – 50 videos</td><td style="text-align:right" class="price-highlight">$5.98</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Kalkulator -->
+        <div style="background:var(--surface-container);border-radius:1.25rem;padding:1.5rem;border:1px solid color-mix(in srgb, var(--outline-variant) 15%, transparent);display:flex;flex-direction:column;gap:1rem">
+          <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--primary);margin:0">Estimate Your Cost</p>
+
+          <input type="number" id="calcInput" min="1" placeholder="Enter number of videos..." style="background:var(--surface-container-high);border:1px solid color-mix(in srgb,var(--outline-variant) 30%,transparent);border-radius:0.75rem;padding:0.75rem 1rem;font-size:1rem;color:var(--on-surface);font-family:'Inter',sans-serif;outline:none;width:100%">
+
+          <div id="calcResult" style="display:none;flex-direction:column;gap:0.75rem">
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:0.75rem 1rem;background:var(--surface-container-high);border-radius:0.75rem">
+              <span style="font-size:0.85rem;color:var(--on-surface-variant)" id="calcDetail"></span>
+              <span style="font-size:1.4rem;font-weight:900;color:var(--primary);font-family:'Manrope',sans-serif" id="calcTotal"></span>
+            </div>
+            <a id="calcWA" href="#" target="_blank" onclick="gtag('event','klik_whatsapp',{event_category:'CTA',event_label:'Calculator'})" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.875rem 1rem;border-radius:999px;background:#25D366;color:white;font-weight:700;font-size:0.9rem;text-decoration:none">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.85L.057 23.43a.75.75 0 0 0 .918.938l5.656-1.485A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+              <span id="calcWAText">Diskusi via WhatsApp</span>
+            </a>
+          </div>
+
+          <p id="calcEmpty" style="color:var(--on-surface-variant);font-size:0.85rem;margin:0">Type the number of videos to see your estimate.</p>
+        </div>
+
+      </div>
+
+      <div class="include-box" style="margin-top:1.5rem">
+        <div class="include-col"><h5>What's Included</h5><ul><li>Clean, engaging short-form video cuts.</li><li>Background music / sound.</li><li>Basic text and caption overlays.</li><li>Basic color grading.</li><li>1x minor revision per video.</li></ul></div>
+        <div class="include-col"><h5>Not Included</h5><ul><li>Detailed manual subtitles or word highlights.</li><li>Custom thumbnails, motion graphics, or extra aspect ratios.</li><li>Scriptwriting, voiceover, dubbing, or filming.</li><li>Major revisions or full concept changes.</li><li>Project file / source file.</li></ul></div>
+      </div>
+
+      <div class="pricing-note" style="background:var(--surface-container);border:1px solid color-mix(in srgb,var(--primary) 20%, transparent);padding:1rem 1.25rem;border-radius:1rem;color:var(--on-surface-variant);font-size:0.9rem;line-height:1.7;margin-top:1.5rem">Pricing applies to videos up to 60 seconds from your footage. For company profiles, ads, or motion graphics — pricing is custom, contact us first.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio-section" id="portfolio">
+  <div class="container">
+    <div class="portfolio-toolbar">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+        <div class="portfolio-chip-row" id="portfolioChips" style="flex:1" aria-label="Filter kategori portfolio"></div>
+        <div class="portfolio-type-switch" aria-label="Jenis portfolio">
+          <button class="portfolio-mode active" type="button" data-mode="short">Short Videos</button>
+          <button class="portfolio-mode" type="button" data-mode="long">Long Videos</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-full-grid" id="portfolioFullGrid" aria-live="polite"></div>
+    <div class="portfolio-pagination" id="portfolioPagination" role="navigation" aria-label="Navigasi halaman portfolio"></div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="section contact-section" id="contact">
+  <div class="section-inner">
+    <div style="max-width:640px;margin:0 auto;text-align:center">
+      <h2 style="font-size:clamp(2rem,4vw,3rem);font-weight:800;letter-spacing:-0.02em;line-height:1.1;margin-bottom:1.5rem">Let's talk. It's free.</h2>
+      <a class="btn-primary" style="display:inline-flex;font-size:1.1rem;padding:1.1rem 2.5rem" href="https://api.whatsapp.com/send/?phone=6285123882845&text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20video%20editing%20project." target="_blank" onclick="gtag('event', 'klik_whatsapp', { event_category: 'CTA', event_label: 'Contact Section' });">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.85L.057 23.43a.75.75 0 0 0 .918.938l5.656-1.485A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+        Chat WhatsApp Sekarang
+      </a>
+      <p style="margin-top:1rem;font-size:0.8rem;color:var(--on-surface-variant)">or <a href="mailto:budirahmawan.id@gmail.com" style="color:var(--primary)">email us</a> · response within 24 hours</p>
+      <div class="contact-socials" style="justify-content:center;margin-top:2rem;margin-bottom:2rem">
+        <a class="social-btn" href="https://www.instagram.com/budi.rachmawan" target="_blank"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>Instagram</a>
+        <a class="social-btn" href="https://www.tiktok.com/@budi.rachmawan" target="_blank"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.56a8.27 8.27 0 0 0 4.85 1.55V6.66a4.85 4.85 0 0 1-1.08.03z"/></svg>TikTok</a>
+        <a class="social-btn" href="https://www.youtube.com/@senaluna.studio" target="_blank"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>YouTube</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCROLL PROGRESS -->
+<div class="nav-scroll-progress" id="scrollProgress"></div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-bottom" style="padding:2rem 0;border-top:none;flex-direction:column;gap:0.5rem;text-align:center">
+      <div style="font-family:'Manrope',sans-serif;font-weight:900;font-size:1.25rem;letter-spacing:-0.04em">
+        <span style="color:var(--on-surface)">Sena</span><span style="color:var(--primary)">Luna</span><span style="color:#f59e0b;font-size:1.5rem">.</span>
+      </div>
+      <p class="footer-copy">© 2026 SenaLuna Frame · Creative Studio</p>
+      <p class="footer-copy">Fast. Professional. Consistent.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WA BUTTON -->
+<a class="wa-float" href="https://api.whatsapp.com/send/?phone=6285123882845&text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20video%20editing%20project." target="_blank" onclick="gtag('event', 'klik_whatsapp', { event_category: 'CTA', event_label: 'Floating Button' });">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.85L.057 23.43a.75.75 0 0 0 .918.938l5.656-1.485A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+  <span>Diskusi via WhatsApp</span>
+</a>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+
+
+
+// ===== MOBILE MENU =====
+function toggleMobile() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+// ===== SCROLL REVEAL =====
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+// ===== SMOOTH SCROLL =====
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
+
+// ===== FULL PORTFOLIO GRID =====
+const fullPortfolioItems = [{"type":"long","category":"long","subcategory":"skincare","thumb":"https://img.youtube.com/vi/Evu51BJx8vQ/hqdefault.jpg","link":"https://www.youtube.com/watch?v=Evu51BJx8vQ"},{"type":"long","category":"long","subcategory":"food","thumb":"https://img.youtube.com/vi/GjWHYc8IrsM/hqdefault.jpg","link":"https://www.youtube.com/watch?v=GjWHYc8IrsM"},{"type":"long","category":"long","subcategory":"corporate","thumb":"https://img.youtube.com/vi/paUuUT7T19Q/hqdefault.jpg","link":"https://www.youtube.com/watch?v=paUuUT7T19Q"},{"type":"long","category":"long","subcategory":"skincare","thumb":"https://img.youtube.com/vi/NN-Iq8flD64/hqdefault.jpg","link":"https://www.youtube.com/watch?v=NN-Iq8flD64"},{"type":"long","category":"long","subcategory":"food","thumb":"https://img.youtube.com/vi/VcPntC4cUmM/hqdefault.jpg","link":"https://www.youtube.com/watch?v=VcPntC4cUmM"},{"type":"long","category":"long","subcategory":"corporate","thumb":"https://img.youtube.com/vi/MkMbTXG1ksY/hqdefault.jpg","link":"https://www.youtube.com/watch?v=MkMbTXG1ksY"},{"type":"short","category":"short","subcategory":"skincare","thumb":"https://img.youtube.com/vi/B-7T_bjRDaY/hqdefault.jpg","link":"https://www.youtube.com/watch?v=B-7T_bjRDaY"},{"type":"short","category":"short","subcategory":"food","thumb":"https://img.youtube.com/vi/qIOswKwbPwQ/hqdefault.jpg","link":"https://www.youtube.com/watch?v=qIOswKwbPwQ"},{"type":"short","category":"short","subcategory":"dance","thumb":"https://img.youtube.com/vi/w75tu4Cf1wo/hqdefault.jpg","link":"https://www.youtube.com/watch?v=w75tu4Cf1wo"},{"type":"short","category":"short","subcategory":"skincare","thumb":"https://img.youtube.com/vi/J06DS-kCAl8/hqdefault.jpg","link":"https://www.youtube.com/watch?v=J06DS-kCAl8"},{"type":"short","category":"short","subcategory":"food","thumb":"https://img.youtube.com/vi/n1GNRCoZUsk/hqdefault.jpg","link":"https://www.youtube.com/watch?v=n1GNRCoZUsk"},{"type":"short","category":"short","subcategory":"dance","thumb":"https://img.youtube.com/vi/kcHfDps3JR8/hqdefault.jpg","link":"https://www.youtube.com/watch?v=kcHfDps3JR8"},{"type":"short","category":"short","subcategory":"skincare","thumb":"https://img.youtube.com/vi/RTxkohB1rNA/hqdefault.jpg","link":"https://www.youtube.com/watch?v=RTxkohB1rNA"},{"type":"short","category":"short","subcategory":"food","thumb":"https://img.youtube.com/vi/an-B0IliySM/hqdefault.jpg","link":"https://www.youtube.com/watch?v=an-B0IliySM"},{"type":"short","category":"short","subcategory":"dance","thumb":"https://img.youtube.com/vi/ww1dnfNkzvw/hqdefault.jpg","link":"https://www.youtube.com/watch?v=ww1dnfNkzvw"},{"type":"short","category":"short","subcategory":"skincare","thumb":"https://img.youtube.com/vi/OGQ1ycIUOgg/hqdefault.jpg","link":"https://www.youtube.com/watch?v=OGQ1ycIUOgg"},{"type":"short","category":"short","subcategory":"food","thumb":"https://img.youtube.com/vi/N6w0Nl-YD-4/hqdefault.jpg","link":"https://www.youtube.com/watch?v=N6w0Nl-YD-4"},{"type":"short","category":"short","subcategory":"dance","thumb":"https://img.youtube.com/vi/p1V51dbCzgg/hqdefault.jpg","link":"https://www.youtube.com/watch?v=p1V51dbCzgg"},{"type":"short","category":"short","subcategory":"skincare","thumb":"https://img.youtube.com/vi/ZT5bt0M0_Zw/hqdefault.jpg","link":"https://www.youtube.com/watch?v=ZT5bt0M0_Zw"},{"type":"short","category":"short","subcategory":"food","thumb":"https://img.youtube.com/vi/QUPiC1S0OUA/hqdefault.jpg","link":"https://www.youtube.com/watch?v=QUPiC1S0OUA"},{"type":"short","category":"short","subcategory":"dance","thumb":"https://img.youtube.com/vi/Quurvn9_wXw/hqdefault.jpg","link":"https://www.youtube.com/watch?v=Quurvn9_wXw"},{"type":"short","category":"short","subcategory":"skincare","thumb":"https://img.youtube.com/vi/oM0SN55Dw4o/hqdefault.jpg","link":"https://www.youtube.com/watch?v=oM0SN55Dw4o"},{"type":"short","category":"short","subcategory":"food","thumb":"https://img.youtube.com/vi/Tn3sCYVHVWk/hqdefault.jpg","link":"https://www.youtube.com/watch?v=Tn3sCYVHVWk"},{"type":"short","category":"short","subcategory":"dance","thumb":"https://img.youtube.com/vi/WjXWUVrydpI/hqdefault.jpg","link":"https://www.youtube.com/watch?v=WjXWUVrydpI"},{"type":"short","category":"short","subcategory":"skincare","thumb":"https://img.youtube.com/vi/vwYMKF8gXqk/hqdefault.jpg","link":"https://www.youtube.com/watch?v=vwYMKF8gXqk"},{"type":"short","category":"short","subcategory":"food","thumb":"https://img.youtube.com/vi/6BV_dIjbf58/hqdefault.jpg","link":"https://www.youtube.com/watch?v=6BV_dIjbf58"},{"type":"short","category":"short","subcategory":"dance","thumb":"https://img.youtube.com/vi/wDlXxSB1Pdw/hqdefault.jpg","link":"https://www.youtube.com/watch?v=wDlXxSB1Pdw"},{"type":"short","category":"short","subcategory":"skincare","thumb":"https://img.youtube.com/vi/Ye-egZAetJM/hqdefault.jpg","link":"https://www.youtube.com/watch?v=Ye-egZAetJM"},{"type":"short","category":"short","subcategory":"food","thumb":"https://img.youtube.com/vi/BUs9zSYboKo/hqdefault.jpg","link":"https://www.youtube.com/watch?v=BUs9zSYboKo"},{"type":"short","category":"short","subcategory":"dance","thumb":"https://img.youtube.com/vi/Q8gwoNZSoVs/hqdefault.jpg","link":"https://www.youtube.com/watch?v=Q8gwoNZSoVs"},{"type":"short","category":"short","subcategory":"skincare","thumb":"https://img.youtube.com/vi/hBCokbT1wwo/hqdefault.jpg","link":"https://www.youtube.com/watch?v=hBCokbT1wwo"},{"type":"short","category":"short","subcategory":"food","thumb":"https://img.youtube.com/vi/OeCxAfgRRIQ/hqdefault.jpg","link":"https://www.youtube.com/watch?v=OeCxAfgRRIQ"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1BMnAfH9qF2k1Ivvm0gvQq5p2hvJM4bXp&sz=w800","link":"https://drive.google.com/file/d/1BMnAfH9qF2k1Ivvm0gvQq5p2hvJM4bXp/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1LkSN5nvA71_J-SCmBkrA50WrwbCJJLXi&sz=w800","link":"https://drive.google.com/file/d/1LkSN5nvA71_J-SCmBkrA50WrwbCJJLXi/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1H2Vc0umjxmTmfrlJpsDJxbtdcP4FLLc2&sz=w800","link":"https://drive.google.com/file/d/1H2Vc0umjxmTmfrlJpsDJxbtdcP4FLLc2/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1VBKsXVdQpZbAWMxv5Lu9haU2faQQ8S0r&sz=w800","link":"https://drive.google.com/file/d/1VBKsXVdQpZbAWMxv5Lu9haU2faQQ8S0r/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1okxffDebvXT_eUTl957CsKVUvwKO2RkE&sz=w800","link":"https://drive.google.com/file/d/1okxffDebvXT_eUTl957CsKVUvwKO2RkE/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1zC203z6nndAC0xwAotTjW6Ni09glpwYf&sz=w800","link":"https://drive.google.com/file/d/1zC203z6nndAC0xwAotTjW6Ni09glpwYf/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1-EfUJrWSgsOnbwwRhXj46UhyWcNa4tzu&sz=w800","link":"https://drive.google.com/file/d/1-EfUJrWSgsOnbwwRhXj46UhyWcNa4tzu/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1yHUtH4iSc97-Po1Y7qPK160Z5JnUnszB&sz=w800","link":"https://drive.google.com/file/d/1yHUtH4iSc97-Po1Y7qPK160Z5JnUnszB/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1C9bOMnQ-gGAZGnd-ezmeVvm1i-f4oNJq&sz=w800","link":"https://drive.google.com/file/d/1C9bOMnQ-gGAZGnd-ezmeVvm1i-f4oNJq/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1QYWhWbhU7tqqRba5YiTQ7av9mj2U8Eyq&sz=w800","link":"https://drive.google.com/file/d/1QYWhWbhU7tqqRba5YiTQ7av9mj2U8Eyq/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1mbpM-Z_bapnKlM0innef2KNTJUbtEoef&sz=w800","link":"https://drive.google.com/file/d/1mbpM-Z_bapnKlM0innef2KNTJUbtEoef/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1aRZf2rinwpO-m8R39HMrR0d9bky2ukme&sz=w800","link":"https://drive.google.com/file/d/1aRZf2rinwpO-m8R39HMrR0d9bky2ukme/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1G3LH2f4EtahMl3vKlP9aXsl3MMGxvKjy&sz=w800","link":"https://drive.google.com/file/d/1G3LH2f4EtahMl3vKlP9aXsl3MMGxvKjy/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1B1nooOQP59bC4ftzyc_icjeiO3Dj1Je2&sz=w800","link":"https://drive.google.com/file/d/1B1nooOQP59bC4ftzyc_icjeiO3Dj1Je2/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1m3IVVnrvTnWBC7nelBJwmOvDf1j4B0EJ&sz=w800","link":"https://drive.google.com/file/d/1m3IVVnrvTnWBC7nelBJwmOvDf1j4B0EJ/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1zt9bvms9QkBNbK16YtdDj0w8Z4NTgYlx&sz=w800","link":"https://drive.google.com/file/d/1zt9bvms9QkBNbK16YtdDj0w8Z4NTgYlx/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1gynjtb7_hzQf0TH6IvFUkwClRflGBCAg&sz=w800","link":"https://drive.google.com/file/d/1gynjtb7_hzQf0TH6IvFUkwClRflGBCAg/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1GeiEa2stW3zgkvsR_ZJHo5ncP9kaQqds&sz=w800","link":"https://drive.google.com/file/d/1GeiEa2stW3zgkvsR_ZJHo5ncP9kaQqds/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1jQdcB1UmwGKv2j6mtjUgNbO0cTUHZX7h&sz=w800","link":"https://drive.google.com/file/d/1jQdcB1UmwGKv2j6mtjUgNbO0cTUHZX7h/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1r-W4fQCEuxn3y9mzqg9cFTy_obYN2Xjh&sz=w800","link":"https://drive.google.com/file/d/1r-W4fQCEuxn3y9mzqg9cFTy_obYN2Xjh/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1w1EzO-Bk5K5Fa8wJna3leVLl1s5MkEHK&sz=w800","link":"https://drive.google.com/file/d/1w1EzO-Bk5K5Fa8wJna3leVLl1s5MkEHK/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1OuDQTQWIfSS5EA9pKLpd48FLquVu1KZZ&sz=w800","link":"https://drive.google.com/file/d/1OuDQTQWIfSS5EA9pKLpd48FLquVu1KZZ/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1b7GjtdVMB-dRv3Dk0Uo-wOq_tCo7QqnU&sz=w800","link":"https://drive.google.com/file/d/1b7GjtdVMB-dRv3Dk0Uo-wOq_tCo7QqnU/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1Y1zXwIhh4Z3aVEvaIkjJUunncAd4Rmqe&sz=w800","link":"https://drive.google.com/file/d/1Y1zXwIhh4Z3aVEvaIkjJUunncAd4Rmqe/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1rHWsnWpcW_EIxnPu7O7_dc4apFNrZW-5&sz=w800","link":"https://drive.google.com/file/d/1rHWsnWpcW_EIxnPu7O7_dc4apFNrZW-5/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1E7eelZwukYAKEGbp46_4RHsGjqsR8IMb&sz=w800","link":"https://drive.google.com/file/d/1E7eelZwukYAKEGbp46_4RHsGjqsR8IMb/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1NXfmJVSOqFW04GGyPnyTMIU402zy6_Ak&sz=w800","link":"https://drive.google.com/file/d/1NXfmJVSOqFW04GGyPnyTMIU402zy6_Ak/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1WVISBRzgyWGcU69lRnEtcvb8Jhs2iJW-&sz=w800","link":"https://drive.google.com/file/d/1WVISBRzgyWGcU69lRnEtcvb8Jhs2iJW-/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1QPbGHJriRU6x8tFDG1jvCjZ_wwA5XE9D&sz=w800","link":"https://drive.google.com/file/d/1QPbGHJriRU6x8tFDG1jvCjZ_wwA5XE9D/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1936gm6x1qGtZsObc4WcThiiJ6TxuW8V2&sz=w800","link":"https://drive.google.com/file/d/1936gm6x1qGtZsObc4WcThiiJ6TxuW8V2/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=13hF48A4aGI0qXr-yyHMBiiNFp4V_JO-2&sz=w800","link":"https://drive.google.com/file/d/13hF48A4aGI0qXr-yyHMBiiNFp4V_JO-2/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1mZO7BNI8dhTUK4Nm28vnkAQpDo8fCkxF&sz=w800","link":"https://drive.google.com/file/d/1mZO7BNI8dhTUK4Nm28vnkAQpDo8fCkxF/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1FRiuHfHocdl2Ia5U63yjiNBGSvV_eOUn&sz=w800","link":"https://drive.google.com/file/d/1FRiuHfHocdl2Ia5U63yjiNBGSvV_eOUn/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1AL7ldEyKqaU6_d0bGeAtwsaD5MMSNlvy&sz=w800","link":"https://drive.google.com/file/d/1AL7ldEyKqaU6_d0bGeAtwsaD5MMSNlvy/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1HBDIC5OyCTUHrewKT2fPVT_ra6kQb1CO&sz=w800","link":"https://drive.google.com/file/d/1HBDIC5OyCTUHrewKT2fPVT_ra6kQb1CO/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1DZSAo0lnTD_rJEU2gx-0BG0cMVFsYfqj&sz=w800","link":"https://drive.google.com/file/d/1DZSAo0lnTD_rJEU2gx-0BG0cMVFsYfqj/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1683ma0eJZQVJ6bBko3zx0M_9ynR1ilTs&sz=w800","link":"https://drive.google.com/file/d/1683ma0eJZQVJ6bBko3zx0M_9ynR1ilTs/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1rgxMV0mscxYJ_5tbTxaI0uR7r4v7vDLr&sz=w800","link":"https://drive.google.com/file/d/1rgxMV0mscxYJ_5tbTxaI0uR7r4v7vDLr/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1Y6bEBma8hTl7ubhUkGRXdYZ1utEsR4pl&sz=w800","link":"https://drive.google.com/file/d/1Y6bEBma8hTl7ubhUkGRXdYZ1utEsR4pl/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1hkMl10rjEzGr5Zzj2OznsGY_ZiCZRfbp&sz=w800","link":"https://drive.google.com/file/d/1hkMl10rjEzGr5Zzj2OznsGY_ZiCZRfbp/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1Dc2IsWFfN88I03-B1bVWRnWwe7gTmgRU&sz=w800","link":"https://drive.google.com/file/d/1Dc2IsWFfN88I03-B1bVWRnWwe7gTmgRU/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1x91WOppz9arRXxiOn0JIf7j2a1hGFk-g&sz=w800","link":"https://drive.google.com/file/d/1x91WOppz9arRXxiOn0JIf7j2a1hGFk-g/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1zvPZ-bmcHiHUZLwbPqYjgcp-ADROawqh&sz=w800","link":"https://drive.google.com/file/d/1zvPZ-bmcHiHUZLwbPqYjgcp-ADROawqh/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1lgZicniOq2TIDgd99Uy3uFD5kTLlccOS&sz=w800","link":"https://drive.google.com/file/d/1lgZicniOq2TIDgd99Uy3uFD5kTLlccOS/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1sa_Kx7DmgQcVLSVi2rsh_jBrh8GmAA2E&sz=w800","link":"https://drive.google.com/file/d/1sa_Kx7DmgQcVLSVi2rsh_jBrh8GmAA2E/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1AvELFfk0pYUfcV-fh5sQNKo7gFSJMnHE&sz=w800","link":"https://drive.google.com/file/d/1AvELFfk0pYUfcV-fh5sQNKo7gFSJMnHE/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1w2F5YVBZWL8vuvxF9HMRyM5Vijfh5xrM&sz=w800","link":"https://drive.google.com/file/d/1w2F5YVBZWL8vuvxF9HMRyM5Vijfh5xrM/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1rxxJXbDN9TXSdVp3fS-ylz1TxxzH9WQn&sz=w800","link":"https://drive.google.com/file/d/1rxxJXbDN9TXSdVp3fS-ylz1TxxzH9WQn/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1V8zWl6Xth9hP6bEfs-2ZIZLGAxaM7jwH&sz=w800","link":"https://drive.google.com/file/d/1V8zWl6Xth9hP6bEfs-2ZIZLGAxaM7jwH/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1KU-ZtUUeX3iQdYI53B3_4ucbgeRRVXxm&sz=w800","link":"https://drive.google.com/file/d/1KU-ZtUUeX3iQdYI53B3_4ucbgeRRVXxm/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1jNFvDNZuevl5zW7CLv6nrxEnO3CCxc3K&sz=w800","link":"https://drive.google.com/file/d/1jNFvDNZuevl5zW7CLv6nrxEnO3CCxc3K/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1R3c4H3PSyywHzTpOs4r9otpGpbgj6G83&sz=w800","link":"https://drive.google.com/file/d/1R3c4H3PSyywHzTpOs4r9otpGpbgj6G83/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1ND4j92r2_0dbLVw_Uc27b_ELGhp738EH&sz=w800","link":"https://drive.google.com/file/d/1ND4j92r2_0dbLVw_Uc27b_ELGhp738EH/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1maW1pu_1YA2YMu8ZudhCuEIrw5rhu2PO&sz=w800","link":"https://drive.google.com/file/d/1maW1pu_1YA2YMu8ZudhCuEIrw5rhu2PO/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1WP-djWRkvHhkxHhGpSgW014XgGBQahqu&sz=w800","link":"https://drive.google.com/file/d/1WP-djWRkvHhkxHhGpSgW014XgGBQahqu/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1KvmaGw86fjO6ajRxaQfhTZLSmlfVemTq&sz=w800","link":"https://drive.google.com/file/d/1KvmaGw86fjO6ajRxaQfhTZLSmlfVemTq/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1VJvg5VcPg6yrmoDbRADXCbBO-ZtffzZb&sz=w800","link":"https://drive.google.com/file/d/1VJvg5VcPg6yrmoDbRADXCbBO-ZtffzZb/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=16MeAKYA7BX3_0nATxIIhwX3n-DbL8g7H&sz=w800","link":"https://drive.google.com/file/d/16MeAKYA7BX3_0nATxIIhwX3n-DbL8g7H/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1k1ouCGxeH2DOho9Qx5t0sPxaOCe3FGQA&sz=w800","link":"https://drive.google.com/file/d/1k1ouCGxeH2DOho9Qx5t0sPxaOCe3FGQA/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1z6FUCzYkJeA9XJ1Po_zxXfs55inB4UIR&sz=w800","link":"https://drive.google.com/file/d/1z6FUCzYkJeA9XJ1Po_zxXfs55inB4UIR/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1ITqFK3rb_64kk-YDv7uEzg4ugKUM5kCH&sz=w800","link":"https://drive.google.com/file/d/1ITqFK3rb_64kk-YDv7uEzg4ugKUM5kCH/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1nLVkl3KZaRvHVpy_Sdh6TyP3qIaPNNDU&sz=w800","link":"https://drive.google.com/file/d/1nLVkl3KZaRvHVpy_Sdh6TyP3qIaPNNDU/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=133XxFVeQ6VD6uGdAatr5lsgKNOjgC8Qz&sz=w800","link":"https://drive.google.com/file/d/133XxFVeQ6VD6uGdAatr5lsgKNOjgC8Qz/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1zBcGCskP_wzivIbS0YxOrLiPrr_Qgxut&sz=w800","link":"https://drive.google.com/file/d/1zBcGCskP_wzivIbS0YxOrLiPrr_Qgxut/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=15lLbuckJrm-yxl1ll1KKH8-yvR-hIDf1&sz=w800","link":"https://drive.google.com/file/d/15lLbuckJrm-yxl1ll1KKH8-yvR-hIDf1/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=17PWOJr9Z_-xyZqdYVrwrBGyGvcsqFnNz&sz=w800","link":"https://drive.google.com/file/d/17PWOJr9Z_-xyZqdYVrwrBGyGvcsqFnNz/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1HCygT7qoEfyN8u7v9XLxJI3b-d21CM_k&sz=w800","link":"https://drive.google.com/file/d/1HCygT7qoEfyN8u7v9XLxJI3b-d21CM_k/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1jzCut2vbO4VA8MCpV8woVKbDJiRDVAuy&sz=w800","link":"https://drive.google.com/file/d/1jzCut2vbO4VA8MCpV8woVKbDJiRDVAuy/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1FAqrkiYfsqpqA7XuUCqpublh0Ks4aUX_&sz=w800","link":"https://drive.google.com/file/d/1FAqrkiYfsqpqA7XuUCqpublh0Ks4aUX_/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1xbxbULjbTG861VH_mfrfwh7e_4s3jksx&sz=w800","link":"https://drive.google.com/file/d/1xbxbULjbTG861VH_mfrfwh7e_4s3jksx/view"},{"type":"drive","category":"kids","subcategory":"kids","thumb":"https://drive.google.com/thumbnail?id=1qsb3HS0rPPfW7loj0mqeGGVHzdGpSse3&sz=w800","link":"https://drive.google.com/file/d/1qsb3HS0rPPfW7loj0mqeGGVHzdGpSse3/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1DYnaOdseQgwmZFfXNo0BuNCgTfzKeYyc&sz=w800","link":"https://drive.google.com/file/d/1DYnaOdseQgwmZFfXNo0BuNCgTfzKeYyc/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1giQo2kzFE0bUC7uU3qJqfITuX74AXNrD&sz=w800","link":"https://drive.google.com/file/d/1giQo2kzFE0bUC7uU3qJqfITuX74AXNrD/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1SisR5fCIbVtKlz180-T2f4UqHxswTZYZ&sz=w800","link":"https://drive.google.com/file/d/1SisR5fCIbVtKlz180-T2f4UqHxswTZYZ/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1yU7e_MiR1FGooe2kT5c8x-x4oDPj1vcb&sz=w800","link":"https://drive.google.com/file/d/1yU7e_MiR1FGooe2kT5c8x-x4oDPj1vcb/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1AhJTqagOKoBh-rKDThK6eMp5eEzEeQTU&sz=w800","link":"https://drive.google.com/file/d/1AhJTqagOKoBh-rKDThK6eMp5eEzEeQTU/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1c_Azo1zluDcqF6PuLUysbjpCtFDFvrBK&sz=w800","link":"https://drive.google.com/file/d/1c_Azo1zluDcqF6PuLUysbjpCtFDFvrBK/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1Uqd_wEjbfi-8r1z1QqJ7iisLrR-KUePK&sz=w800","link":"https://drive.google.com/file/d/1Uqd_wEjbfi-8r1z1QqJ7iisLrR-KUePK/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=10THnM8rqMZQsZkbJvdPWzvBM_3bRkvM1&sz=w800","link":"https://drive.google.com/file/d/10THnM8rqMZQsZkbJvdPWzvBM_3bRkvM1/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=17KZ7anSYuWIjckHMQx6-Pz-btx_jGeIm&sz=w800","link":"https://drive.google.com/file/d/17KZ7anSYuWIjckHMQx6-Pz-btx_jGeIm/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1gBGubHUg8l_9LQqVCEC2Wi_B0EmERk89&sz=w800","link":"https://drive.google.com/file/d/1gBGubHUg8l_9LQqVCEC2Wi_B0EmERk89/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1MXz9Ix9LrqsSJ6ZYgxKR5b-HrrWIgwa1&sz=w800","link":"https://drive.google.com/file/d/1MXz9Ix9LrqsSJ6ZYgxKR5b-HrrWIgwa1/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1-yuFILVLJoEqjaPn--pNAtaWI4nWYJIG&sz=w800","link":"https://drive.google.com/file/d/1-yuFILVLJoEqjaPn--pNAtaWI4nWYJIG/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1AqBOrjhcFJpS8HVds01s0mrR5s5XjOOF&sz=w800","link":"https://drive.google.com/file/d/1AqBOrjhcFJpS8HVds01s0mrR5s5XjOOF/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1v831IK7lTLFhWsnojDhqJjt8vMHlppry&sz=w800","link":"https://drive.google.com/file/d/1v831IK7lTLFhWsnojDhqJjt8vMHlppry/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1uu08YXdeA8_m94GVr-REOHhLbNZCZzVl&sz=w800","link":"https://drive.google.com/file/d/1uu08YXdeA8_m94GVr-REOHhLbNZCZzVl/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1k2fvpX3ZzCe9YTLso9MbKblc8hDeVSdM&sz=w800","link":"https://drive.google.com/file/d/1k2fvpX3ZzCe9YTLso9MbKblc8hDeVSdM/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1pOWc9XHK203D80WyWOhbcrXUGQ0nMlPG&sz=w800","link":"https://drive.google.com/file/d/1pOWc9XHK203D80WyWOhbcrXUGQ0nMlPG/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1gcIk8GCGEg2EDjfuIooDqBaKugALU-0n&sz=w800","link":"https://drive.google.com/file/d/1gcIk8GCGEg2EDjfuIooDqBaKugALU-0n/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1Cp_Yij_uBKXCS1mPGGrlIgfuqtjE8V-l&sz=w800","link":"https://drive.google.com/file/d/1Cp_Yij_uBKXCS1mPGGrlIgfuqtjE8V-l/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1nSJsfOWyT01mbZGmSsB9iBIV8-o22OSE&sz=w800","link":"https://drive.google.com/file/d/1nSJsfOWyT01mbZGmSsB9iBIV8-o22OSE/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=13JA3GQrJ3OixVfqqWRADq34uprzCuMbj&sz=w800","link":"https://drive.google.com/file/d/13JA3GQrJ3OixVfqqWRADq34uprzCuMbj/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=18Qfhd6AyVW0cgGhUCzj4AQxy5XCaajrD&sz=w800","link":"https://drive.google.com/file/d/18Qfhd6AyVW0cgGhUCzj4AQxy5XCaajrD/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1rImMD-9fPzlMw84a1FCKOiBKPVuLVxjr&sz=w800","link":"https://drive.google.com/file/d/1rImMD-9fPzlMw84a1FCKOiBKPVuLVxjr/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1ymLKW0x_fLqebgJhGXWAzNP9_pe0-D_U&sz=w800","link":"https://drive.google.com/file/d/1ymLKW0x_fLqebgJhGXWAzNP9_pe0-D_U/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1YUXyNhK4N7rlC6XefUYskpp-wai-FMZ1&sz=w800","link":"https://drive.google.com/file/d/1YUXyNhK4N7rlC6XefUYskpp-wai-FMZ1/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1RTRhfB_j07dNzEwmDNhdz0nvmL6KWdNG&sz=w800","link":"https://drive.google.com/file/d/1RTRhfB_j07dNzEwmDNhdz0nvmL6KWdNG/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1kceQAf5makcLIH47uh69J82TRWMLhSnw&sz=w800","link":"https://drive.google.com/file/d/1kceQAf5makcLIH47uh69J82TRWMLhSnw/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=115fmhGbZV_VRy95UhaiGAx__XCRP5J8O&sz=w800","link":"https://drive.google.com/file/d/115fmhGbZV_VRy95UhaiGAx__XCRP5J8O/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1uiI-78PYLuPHoWjWWXHdlCXQOkmoEiNw&sz=w800","link":"https://drive.google.com/file/d/1uiI-78PYLuPHoWjWWXHdlCXQOkmoEiNw/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=160RAhqnHuTjYtZbtuZjgOe_gFYEYBEgy&sz=w800","link":"https://drive.google.com/file/d/160RAhqnHuTjYtZbtuZjgOe_gFYEYBEgy/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1swYD-ImVrf42KA4qQOHB4Mkhw1lRKbsn&sz=w800","link":"https://drive.google.com/file/d/1swYD-ImVrf42KA4qQOHB4Mkhw1lRKbsn/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1473yvq_E5pIjHcYL2uzJq0RrMZK5d15F&sz=w800","link":"https://drive.google.com/file/d/1473yvq_E5pIjHcYL2uzJq0RrMZK5d15F/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=17E3jafywKqxGB3ZUClxkgX9AmV7aAyvz&sz=w800","link":"https://drive.google.com/file/d/17E3jafywKqxGB3ZUClxkgX9AmV7aAyvz/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1j6fTOg9z2vdbdwdIAHg_W1jV_8TmUFwJ&sz=w800","link":"https://drive.google.com/file/d/1j6fTOg9z2vdbdwdIAHg_W1jV_8TmUFwJ/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1hpjHnAfVXzR4opEB7BMvSz3PABnNrzQ6&sz=w800","link":"https://drive.google.com/file/d/1hpjHnAfVXzR4opEB7BMvSz3PABnNrzQ6/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1bso3j5V0gDM8eEjPHZ-WiRdrb1SaU0VL&sz=w800","link":"https://drive.google.com/file/d/1bso3j5V0gDM8eEjPHZ-WiRdrb1SaU0VL/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1b8-Qrj0yw1D6uFEn422ry_HZFTsYpVZL&sz=w800","link":"https://drive.google.com/file/d/1b8-Qrj0yw1D6uFEn422ry_HZFTsYpVZL/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1HmePieXQwMscHzFwAalXXF-RkomluT3N&sz=w800","link":"https://drive.google.com/file/d/1HmePieXQwMscHzFwAalXXF-RkomluT3N/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=13gsQmaIi7x93noGST_AenDu_1QO0faqm&sz=w800","link":"https://drive.google.com/file/d/13gsQmaIi7x93noGST_AenDu_1QO0faqm/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1dprxylPRN1S4yJTBH55xRnrX5EzNN_TY&sz=w800","link":"https://drive.google.com/file/d/1dprxylPRN1S4yJTBH55xRnrX5EzNN_TY/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1K-aNcKjy0_1Hg2MGrbnluU0rnfDotApd&sz=w800","link":"https://drive.google.com/file/d/1K-aNcKjy0_1Hg2MGrbnluU0rnfDotApd/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=14Q9H1AU6FVDFHInHjKOqMxtjkUEcmmiE&sz=w800","link":"https://drive.google.com/file/d/14Q9H1AU6FVDFHInHjKOqMxtjkUEcmmiE/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1L_nbsYZATzqRM1GPa5sRg0CiEsqowEYc&sz=w800","link":"https://drive.google.com/file/d/1L_nbsYZATzqRM1GPa5sRg0CiEsqowEYc/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=107SByYocdu79OVB09FRfpTcoWBZTObm6&sz=w800","link":"https://drive.google.com/file/d/107SByYocdu79OVB09FRfpTcoWBZTObm6/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1Gr_HC5ST5jDMJeG3DTB-bMiSEotm8nt6&sz=w800","link":"https://drive.google.com/file/d/1Gr_HC5ST5jDMJeG3DTB-bMiSEotm8nt6/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1DLXODqSTlb6nlztw6BPfkl8ODURvoj5d&sz=w800","link":"https://drive.google.com/file/d/1DLXODqSTlb6nlztw6BPfkl8ODURvoj5d/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1N8xJmMlXgsdgoXOfhppTuWg3ZtLQC12_&sz=w800","link":"https://drive.google.com/file/d/1N8xJmMlXgsdgoXOfhppTuWg3ZtLQC12_/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1gG2rUqVQB4pLrKMYKW6wjiQplG5OIATb&sz=w800","link":"https://drive.google.com/file/d/1gG2rUqVQB4pLrKMYKW6wjiQplG5OIATb/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1XVdIQLIkFZ76_0LTrbYPLCWuTKEpiTMo&sz=w800","link":"https://drive.google.com/file/d/1XVdIQLIkFZ76_0LTrbYPLCWuTKEpiTMo/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1mVM76wQAuiJhYGI3rL1w9D1vEJKmRPbo&sz=w800","link":"https://drive.google.com/file/d/1mVM76wQAuiJhYGI3rL1w9D1vEJKmRPbo/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1IOc6C8mGg3YXSDOAJn4U61jgb3E3yfrh&sz=w800","link":"https://drive.google.com/file/d/1IOc6C8mGg3YXSDOAJn4U61jgb3E3yfrh/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1-U0QnCPMA3MMpyC16zVbJjq7Wb2e_bnx&sz=w800","link":"https://drive.google.com/file/d/1-U0QnCPMA3MMpyC16zVbJjq7Wb2e_bnx/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1GcKcuPuhT3ovKZFkgFxxUDR-nFcFp1q3&sz=w800","link":"https://drive.google.com/file/d/1GcKcuPuhT3ovKZFkgFxxUDR-nFcFp1q3/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1dvY4BhWWWFfbHsFVE5PQid1DhidAJRj2&sz=w800","link":"https://drive.google.com/file/d/1dvY4BhWWWFfbHsFVE5PQid1DhidAJRj2/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1fKkWHQ5oeOysAglpCMp_YlaBacnGPmBv&sz=w800","link":"https://drive.google.com/file/d/1fKkWHQ5oeOysAglpCMp_YlaBacnGPmBv/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1DVSrOlqa-OLSPiB7Pi62Z7d-bR7LX0dB&sz=w800","link":"https://drive.google.com/file/d/1DVSrOlqa-OLSPiB7Pi62Z7d-bR7LX0dB/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1jEp7-aYOEQ4v87dAwPe-5d_AeTJexDV4&sz=w800","link":"https://drive.google.com/file/d/1jEp7-aYOEQ4v87dAwPe-5d_AeTJexDV4/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1uBbqd983fLzKest43q6GFXL05njDwU7v&sz=w800","link":"https://drive.google.com/file/d/1uBbqd983fLzKest43q6GFXL05njDwU7v/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1h9h3NXVyZkyWQ6hUsapinxka1GJyASU2&sz=w800","link":"https://drive.google.com/file/d/1h9h3NXVyZkyWQ6hUsapinxka1GJyASU2/view"},{"type":"drive","category":"food","subcategory":"food","thumb":"https://drive.google.com/thumbnail?id=1RFje9hl0cx4J0y0oliiLlVIBgS2isgJ4&sz=w800","link":"https://drive.google.com/file/d/1RFje9hl0cx4J0y0oliiLlVIBgS2isgJ4/view"},{"type":"drive","category":"accessories","subcategory":"accessories","thumb":"https://drive.google.com/thumbnail?id=1g2gC0cWzwUSpkxkOnfUyfwPAEEfDP8hg&sz=w800","link":"https://drive.google.com/file/d/1g2gC0cWzwUSpkxkOnfUyfwPAEEfDP8hg/view"},{"type":"drive","category":"culture","subcategory":"culture","thumb":"https://drive.google.com/thumbnail?id=11JedhhX4_9b27FxoYlVdfIML13H8ZAti&sz=w800","link":"https://drive.google.com/file/d/11JedhhX4_9b27FxoYlVdfIML13H8ZAti/view"},{"type":"drive","category":"hospitality","subcategory":"hospitality","thumb":"https://drive.google.com/thumbnail?id=1ELparndGEvosp-LbVkl2CBPoXUBuD_Lg&sz=w800","link":"https://drive.google.com/file/d/1ELparndGEvosp-LbVkl2CBPoXUBuD_Lg/view"},{"type":"drive","category":"hospitality","subcategory":"hospitality","thumb":"https://drive.google.com/thumbnail?id=1d6Rx3n6crRP_jjcX0_t3bZVcTlo-0sra&sz=w800","link":"https://drive.google.com/file/d/1d6Rx3n6crRP_jjcX0_t3bZVcTlo-0sra/view"},{"type":"drive","category":"hospitality","subcategory":"hospitality","thumb":"https://drive.google.com/thumbnail?id=1_MtXZXm-vMD-Ip8xr6OE-Xm0bVY5IDCw&sz=w800","link":"https://drive.google.com/file/d/1_MtXZXm-vMD-Ip8xr6OE-Xm0bVY5IDCw/view"},{"type":"drive","category":"hospitality","subcategory":"hospitality","thumb":"https://drive.google.com/thumbnail?id=1SUxZWG34bMQ1YGSpJkMdui0161AhU2It&sz=w800","link":"https://drive.google.com/file/d/1SUxZWG34bMQ1YGSpJkMdui0161AhU2It/view"},{"type":"drive","category":"hospitality","subcategory":"hospitality","thumb":"https://drive.google.com/thumbnail?id=1FAGodkOSXz57rjzDyAN1XD3f3PK_v91i&sz=w800","link":"https://drive.google.com/file/d/1FAGodkOSXz57rjzDyAN1XD3f3PK_v91i/view"},{"type":"drive","category":"furniture","subcategory":"furniture","thumb":"https://drive.google.com/thumbnail?id=1f2MeX63vaS4PdHUtIm67KQgDWclBC1t-&sz=w800","link":"https://drive.google.com/file/d/1f2MeX63vaS4PdHUtIm67KQgDWclBC1t-/view"},{"type":"drive","category":"furniture","subcategory":"furniture","thumb":"https://drive.google.com/thumbnail?id=1VsuuwWqCPabP95CAf1-ayuAJqpWnggAD&sz=w800","link":"https://drive.google.com/file/d/1VsuuwWqCPabP95CAf1-ayuAJqpWnggAD/view"},{"type":"drive","category":"furniture","subcategory":"furniture","thumb":"https://drive.google.com/thumbnail?id=1XaDLX9VexxT0NaejCYST31vyNsmAATO2&sz=w800","link":"https://drive.google.com/file/d/1XaDLX9VexxT0NaejCYST31vyNsmAATO2/view"},{"type":"drive","category":"property","subcategory":"property","thumb":"https://drive.google.com/thumbnail?id=1ZUK2BkdxdZbu-ox58RyLqhl1Rqz8AZqL&sz=w800","link":"https://drive.google.com/file/d/1ZUK2BkdxdZbu-ox58RyLqhl1Rqz8AZqL/view"},{"type":"drive","category":"salon","subcategory":"salon","thumb":"https://drive.google.com/thumbnail?id=1UY5prPbKG0vBPY6UiEWpUcMIcqED7Jla&sz=w800","link":"https://drive.google.com/file/d/1UY5prPbKG0vBPY6UiEWpUcMIcqED7Jla/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1r_ICNm4WZ-tkUdr2KDPeZsQ7UnSgnBNb&sz=w800","link":"https://drive.google.com/file/d/1r_ICNm4WZ-tkUdr2KDPeZsQ7UnSgnBNb/view"},{"type":"drive","category":"skincare","subcategory":"skincare","thumb":"https://drive.google.com/thumbnail?id=1wl-HKZfLlZK6mpu6S5hG9UOVsVw48TCX&sz=w800","link":"https://drive.google.com/file/d/1wl-HKZfLlZK6mpu6S5hG9UOVsVw48TCX/view"}];
+const fullPortfolioLabels = {"long":"Long Videos","short":"Short Videos / Reels","skincare":"Skincare & Beauty","food":"Food & Beverage","corporate":"Corporate & Event","dance":"Dance & Creative","kids":"Kids Content","accessories":"Phone Accessories","culture":"Arts & Culture","hospitality":"Hotel & Hospitality","furniture":"Furniture","property":"Property","salon":"Salon & Barbershop"};
+let fullPortfolioCurrentPage = 1;
+let fullPortfolioCurrentMode = 'short';
+let fullPortfolioCurrentCategory = 'all';
+const fullPortfolioPerPage = { short: 30, long: 20 };
+
+function escapePortfolioText(value) {
+  return String(value || '').replace(/[&<>"]/g, function (char) {
+    return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[char];
+  });
+}
+
+function getModeItems(mode) {
+  return fullPortfolioItems.filter(function (item) {
+    return mode === 'long' ? item.type === 'long' : item.type !== 'long';
+  });
+}
+
+function getCategoryKey(item) {
+  return item.subcategory || item.category || 'other';
+}
+
+function getFilteredPortfolio() {
+  const base = getModeItems(fullPortfolioCurrentMode);
+  if (fullPortfolioCurrentCategory === 'all') return base;
+  return base.filter(function (item) { return getCategoryKey(item) === fullPortfolioCurrentCategory; });
+}
+
+function getAvailablePortfolioCategories(mode) {
+  const counts = {};
+  getModeItems(mode).forEach(function (item) {
+    const key = getCategoryKey(item);
+    counts[key] = (counts[key] || 0) + 1;
+  });
+  return Object.keys(counts).sort(function (a, b) {
+    return (fullPortfolioLabels[a] || a).localeCompare(fullPortfolioLabels[b] || b);
+  }).map(function (key) {
+    return { key: key, label: fullPortfolioLabels[key] || key, count: counts[key] };
+  });
+}
+
+function renderPortfolioChips() {
+  const chips = document.getElementById('portfolioChips');
+  if (!chips) return;
+  const baseCount = getModeItems(fullPortfolioCurrentMode).length;
+  const allLabel = fullPortfolioCurrentMode === 'long' ? 'All Long Videos' : 'All Short Videos';
+  const categories = [{ key: 'all', label: allLabel, count: baseCount }].concat(getAvailablePortfolioCategories(fullPortfolioCurrentMode));
+  chips.innerHTML = categories.map(function (item) {
+    const active = item.key === fullPortfolioCurrentCategory ? ' active' : '';
+    return '<button class="portfolio-chip' + active + '" type="button" data-category="' + escapePortfolioText(item.key) + '">' + escapePortfolioText(item.label) + ' (' + item.count + ')</button>';
+  }).join('');
+  chips.querySelectorAll('.portfolio-chip').forEach(function (button) {
+    button.addEventListener('click', function () {
+      fullPortfolioCurrentCategory = button.getAttribute('data-category') || 'all';
+      fullPortfolioCurrentPage = 1;
+      renderPortfolio();
+    });
+  });
+}
+
+function renderPortfolioPagination(totalPages) {
+  const nav = document.getElementById('portfolioPagination');
+  if (!nav) return;
+  if (totalPages <= 1) { nav.innerHTML = ''; return; }
+  const pageButtons = [];
+  for (let page = 1; page <= totalPages; page++) {
+    if (page === 1 || page === totalPages || Math.abs(page - fullPortfolioCurrentPage) <= 1) pageButtons.push(page);
+    else if (pageButtons[pageButtons.length - 1] !== 'gap') pageButtons.push('gap');
+  }
+  nav.innerHTML = '<button class="portfolio-page-btn" type="button" data-page="prev" aria-label="Halaman sebelumnya">‹</button>'
+    + pageButtons.map(function (page) {
+      if (page === 'gap') return '<span class="portfolio-page-jump">...</span>';
+      const active = page === fullPortfolioCurrentPage ? ' active' : '';
+      return '<button class="portfolio-page-btn' + active + '" type="button" data-page="' + page + '">' + page + '</button>';
+    }).join('')
+    + '<button class="portfolio-page-btn" type="button" data-page="next" aria-label="Halaman berikutnya">›</button>';
+  const prev = nav.querySelector('[data-page="prev"]');
+  const next = nav.querySelector('[data-page="next"]');
+  if (prev) prev.disabled = fullPortfolioCurrentPage === 1;
+  if (next) next.disabled = fullPortfolioCurrentPage === totalPages;
+  nav.querySelectorAll('button[data-page]').forEach(function (button) {
+    button.addEventListener('click', function () {
+      const target = button.getAttribute('data-page');
+      if (target === 'prev') fullPortfolioCurrentPage = Math.max(1, fullPortfolioCurrentPage - 1);
+      else if (target === 'next') fullPortfolioCurrentPage = Math.min(totalPages, fullPortfolioCurrentPage + 1);
+      else fullPortfolioCurrentPage = Number(target);
+      renderPortfolio(true);
+    });
+  });
+}
+
+function renderPortfolio(keepPosition) {
+  const grid = document.getElementById('portfolioFullGrid');
+  if (!grid) return;
+  document.querySelectorAll('.portfolio-mode').forEach(function (button) {
+    button.classList.toggle('active', button.getAttribute('data-mode') === fullPortfolioCurrentMode);
+  });
+  renderPortfolioChips();
+  const items = getFilteredPortfolio();
+  const perPage = fullPortfolioPerPage[fullPortfolioCurrentMode] || fullPortfolioPerPage.short;
+  const totalPages = Math.max(1, Math.ceil(items.length / perPage));
+  fullPortfolioCurrentPage = Math.min(Math.max(1, fullPortfolioCurrentPage), totalPages);
+  const start = (fullPortfolioCurrentPage - 1) * perPage;
+  const pageItems = items.slice(start, start + perPage);
+  grid.classList.toggle('is-long', fullPortfolioCurrentMode === 'long');
+  grid.innerHTML = pageItems.map(function (item) {
+    const detail = escapePortfolioText(fullPortfolioLabels[getCategoryKey(item)] || item.detail || 'Portfolio');
+    return '<a class="port-thumb-card" href="' + escapePortfolioText(item.link) + '" target="_blank" rel="noopener" aria-label="Buka portfolio video">'
+      + '<div class="port-thumb-img-wrap">'
+      + '<img src="' + escapePortfolioText(item.thumb) + '" alt="Portfolio ' + detail + '" loading="lazy" decoding="async">'
+      + '</div>'
+      
+      + '</a>';
+  }).join('');
+  const from = items.length ? start + 1 : 0;
+  const to = Math.min(start + pageItems.length, items.length);
+  const modeLabel = fullPortfolioCurrentMode === 'long' ? 'Video Panjang' : 'Video Pendek';
+  const categoryLabel = fullPortfolioCurrentCategory === 'all' ? 'semua kategori' : (fullPortfolioLabels[fullPortfolioCurrentCategory] || fullPortfolioCurrentCategory);
+  renderPortfolioPagination(totalPages);
+  if (keepPosition) {
+    const section = document.getElementById('portfolio');
+    if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.portfolio-mode').forEach(function (button) {
+    button.addEventListener('click', function () {
+      fullPortfolioCurrentMode = button.getAttribute('data-mode') || 'short';
+      fullPortfolioCurrentCategory = 'all';
+      fullPortfolioCurrentPage = 1;
+      renderPortfolio();
+    });
+  });
+  renderPortfolio();
+});
+// ===== END FULL PORTFOLIO GRID =====
+
+
+// ===== PRICE CALCULATOR =====
+(function() {
+  const rates = [
+    { max: 1,  price: 8 },
+    { max: 5,  price: 7.8 },
+    { max: 10, price: 6.9 },
+    { max: 20, price: 6.45 },
+    { max: 50, price: 5.98 },
+  ];
+  function getRate(n) { return rates.find(r => n <= r.max) || rates[rates.length - 1]; }
+  function fmt(n) { return '$' + (Math.round(n * 100) / 100).toFixed(2).replace('.00',''); }
+  const input = document.getElementById('calcInput');
+  const result = document.getElementById('calcResult');
+  const empty = document.getElementById('calcEmpty');
+  const detail = document.getElementById('calcDetail');
+  const total = document.getElementById('calcTotal');
+  const waBtn = document.getElementById('calcWA');
+  const waText = document.getElementById('calcWAText');
+  if (!input) return;
+  input.addEventListener('input', function() {
+    const n = parseInt(input.value);
+    if (!n || n < 1) { result.style.display='none'; empty.style.display='block'; return; }
+    result.style.display = 'flex'; empty.style.display = 'none';
+    if (n > 50) {
+      detail.textContent = n + ' videos — custom pricing';
+      total.textContent = 'Contact us';
+      total.style.fontSize = '1rem';
+      waText.textContent = 'Ask about pricing for ' + n + ' videos';
+      waBtn.href = 'https://api.whatsapp.com/send/?phone=6285123882845&text=Halo%2C%20saya%20mau%20tanya%20harga%20untuk%20' + n + '%20video';
+    } else {
+      const rate = getRate(n);
+      detail.textContent = n + ' video × ' + fmt(rate.price);
+      total.textContent = fmt(n * rate.price);
+      total.style.fontSize = '1.4rem';
+      waText.textContent = 'Order ' + n + ' videos — chat on WhatsApp';
+      waBtn.href = 'https://api.whatsapp.com/send/?phone=6285123882845&text=Halo%2C%20saya%20mau%20order%20' + n + '%20video%20editing.%20Total%20estimasi%20' + encodeURIComponent(fmt(n * rate.price));
+    }
+  });
+})();
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+  const bar = document.getElementById('scrollProgress');
+  if (bar) bar.style.width = pct + '%';
+});
+
+
+// ===== ANIMATED COUNTERS =====
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target, 10);
+  const suffix = el.dataset.suffix || '';
+  const dur = 1800;
+  const start = performance.now();
+  function step(now) {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / dur, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.floor(eased * target) + suffix;
+    if (progress < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+const counterObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting && !e.target.dataset.counted) {
+      e.target.dataset.counted = '1';
+      animateCounter(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.trust-num').forEach((el, i) => {
+  const nums = [500, 3, 50, 98, 24];
+  const suffixes = ['+', 'th', '+', '%', 'h'];
+  el.dataset.target = nums[i] || 0;
+  el.dataset.suffix = suffixes[i] || '';
+  counterObs.observe(el);
+});
+
+// ===== STAGGERED CARD ENTRANCE =====
+const cardObs = new IntersectionObserver((entries) => {
+  entries.forEach((e, idx) => {
+    if (e.isIntersecting) {
+      e.target.style.animationDelay = (idx * 0.08) + 's';
+      e.target.style.animation = 'fadeUp 0.5s ease forwards';
+      cardObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+// Apply to pricing/testi cards in batches
+document.querySelectorAll('.price-card').forEach(el => {
+  el.style.opacity = '0';
+  cardObs.observe(el);
+});
+
+
+
+// ===== PRICE CALCULATOR REMOVED FOR SIMPLER PAGE =====
+// ===== PRICE TABLE WRAP =====
+document.querySelectorAll('table').forEach(table => {
+  if (!table.parentElement.classList.contains('price-table-wrap')) {
+    const wrap = document.createElement('div');
+    wrap.className = 'price-table-wrap';
+    table.parentNode.insertBefore(wrap, table);
+    wrap.appendChild(table);
+  }
+});
+
+// ===== PAGE TRANSITION =====
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) { 
+    document.body.style.opacity = '1'; 
+    document.body.style.transform = 'translateY(0)'; 
+    document.body.style.transition = 'none';
+  }
+});
+
+</script>
+</body>
+</html>
